@@ -1,10 +1,13 @@
-import { View, Text } from "react-native";
+import Menu from '../components/Menu';
+import { MenuData } from '../data/MenuData';
 
 function MenuScreen() {
+  const type = "Crazy Mason";
+  const displayedItems = MenuData.filter((MenuItem) => {
+    return MenuItem.type === type;
+  });
   return (
-    <View>
-      <Text>Menu Screen</Text>
-    </View>
+    <Menu items={displayedItems} />
   );
 }
 

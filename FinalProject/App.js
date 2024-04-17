@@ -20,13 +20,14 @@ function TabsNavigator() {
   return (
     <Tabs.Navigator
       screenOptions={{
+        headerShown: false,
         tabBarShowLabel: true,
         tabBarActiveBackgroundColor: Colors.primary800,
         tabBarInactiveBackgroundColor: Colors.primary500,
         tabBarActiveTintColor: Colors.accent500,
         tabBarInactiveTintColor: Colors.primary300,
         tabBarLabelStyle: {
-          fontFamily: "playfairBold",
+          fontFamily: "RobotoBold",
           fontSize: 12,
         },
         tabBarStyle: {
@@ -98,14 +99,7 @@ export default function App() {
       <StatusBar style="light" />
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="HomeScreen"
-          screenOptions={{
-            headerStyle: {
-              backgroundColor: Colors.primary500},
-              headerTintColor: Colors.accent500,
-              headerTitleStyle: {fontFamily: "RobotoBold", fontSize: 24},
-              contentStyle: {backgroundColor: "black"},
-          }}
+          initialRouteName="HomeScreen"   
           >
           <Stack.Screen
             name="TabsNavigator"

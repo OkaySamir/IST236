@@ -17,9 +17,9 @@ function MenuItem(props) {
         { backgroundColor: props.menuindex % 2 === 0 ? "#ccc" : "#fff" },
       ]}
     >
-      <Pressable onPress={() => navigation.navigate(title)}>
+      <Pressable onPress={selectedListHandler}>
         <View style={styles.imageContainer}>
-          <Image style={styles.image} source={{ url: props.imageUrl }} />
+          <Image style={styles.image} source={{ uri: props.image }} />
         </View>
         <View style={styles.infoContainer}>
           <Text style={styles.name}>{props.name}</Text>
