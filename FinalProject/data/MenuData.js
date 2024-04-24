@@ -1,4 +1,5 @@
 import MenuItems from "../models/MenuItems";
+import Reward from "../models/Rewards";
 
 export const MenuData = [
     new MenuItems(
@@ -41,4 +42,16 @@ export const MenuData = [
         '8.99',
         'Customer’s choice of ice cream, Whipped Cream, and a Cherry'
     )
-]
+];
+
+export const REWARDS = [
+    new Reward("1", "Free Topping", "#3ecfe9", "200"), 
+    new Reward("2", "Free Sauce", "#3ecfe9", "300"),
+    new Reward("3", "Free Single Scoop", "#e9bb3e", "600"),
+    new Reward("4", "Free Premium Topping", "#e9bb3e", "600"),
+    new Reward("4", "Free Double Scoop", "#e97d3e", "900"),
+    new Reward("5", "Free Mason Jar", "#e97d3e", "950"),
+    new Reward("6", "Free Simple Milkshake", "#e93e3e", "1100"),
+    new Reward("7", "Free Crazy Mason Milkshake", "#e93e3e", "1600"),
+    new Reward("8", "Free Crazy Mason Shirt", "#3ee93e", "2000"),
+];
